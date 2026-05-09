@@ -1,4 +1,4 @@
-import { MessageCircle, Phone } from "lucide-react";
+import { MessageCircle, Phone, MapPin } from "lucide-react";
 import InstagramIcon from "./InstagramIcon";
 
 export default function Footer() {
@@ -13,9 +13,24 @@ export default function Footer() {
             >
               Mehendi & Nails By<span className="text-[#C9A646]">Riddhi</span>
             </a>
-            <p className="text-gray-400 max-w-sm text-sm font-light">
+            <p className="text-gray-400 max-w-sm text-sm font-light mb-6">
               Your trusted Mehendi and Nail Artist in Bopal, Ahmedabad. We make your special moments beautiful with safe, natural henna and premium nail art.
             </p>
+            <div className="flex flex-col items-center md:items-start text-sm text-gray-400 space-y-3">
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-[#C9A646] shrink-0" />
+                <p className="max-w-[250px] text-left">
+                  <span className="text-white block font-medium mb-1">Riddhi Prajapati</span>
+                  804 Sun Aspire, Nr. Nilkanth villa bunglow, opp samprat residency, dps road bopal - shilaj, Ahmedabad - 380058
+                </p>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-[#C9A646] shrink-0" />
+                <a href="tel:9974418119" className="hover:text-white transition-colors">
+                  +91 99744 18119
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col items-center md:items-end">
@@ -75,7 +90,7 @@ export default function Footer() {
               <InstagramIcon className="w-5 h-5" />
             </a>
             <a
-              href="https://wa.me/99774418119"
+              href="https://wa.me/9974418119"
               target="_blank"
               rel="noreferrer"
               className="text-gray-400 hover:text-[#C9A646] transition-colors"
@@ -83,7 +98,7 @@ export default function Footer() {
               <MessageCircle className="w-5 h-5" />
             </a>
             <a
-              href="tel:99774418119"
+              href="tel:9974418119"
               className="text-gray-400 hover:text-[#C9A646] transition-colors"
             >
               <Phone className="w-5 h-5" />

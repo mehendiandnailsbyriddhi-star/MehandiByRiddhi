@@ -4,7 +4,7 @@ import { Star, ChevronDown, Award } from 'lucide-react';
 export default function Hero() {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Hi Riddhi! I'm interested in booking a Mehendi or nail art session. Can we discuss details?");
-    window.open(`https://wa.me/99774418119?text=${message}`, '_blank');
+    window.open(`https://wa.me/9974418119?text=${message}`, '_blank');
   };
 
   return (

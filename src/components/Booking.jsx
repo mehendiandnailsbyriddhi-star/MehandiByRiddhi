@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone, MessageCircle, MapPin } from 'lucide-react';
 import InstagramIcon from './InstagramIcon';
 
 export default function Booking() {
@@ -18,7 +18,7 @@ export default function Booking() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const message = `Hi Riddhi! I would like to book a session.%0A%0A*Name:* ${formData.name}%0A*Service:* ${formData.event}%0A*Date:* ${formData.date}%0A*Location:* ${formData.location}%0A%0APlease let me know your availability and pricing.`;
-    window.open(`https://wa.me/99774418119?text=${message}`, '_blank');
+    window.open(`https://wa.me/9974418119?text=${message}`, '_blank');
   };
 
   return (
@@ -41,23 +41,23 @@ export default function Booking() {
               </p>
 
               <div className="space-y-6 mb-10">
-                <a href="https://wa.me/99774418119" target="_blank" rel="noreferrer" className="flex items-center group">
+                <a href="https://wa.me/9974418119" target="_blank" rel="noreferrer" className="flex items-center group">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors">
                     <MessageCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Chat with us</p>
-                    <p className="font-medium text-lg">+91 99774 41811</p>
+                    <p className="font-medium text-lg">+91 99744 18119</p>
                   </div>
                 </a>
                 
-                <a href="tel:99774418119" className="flex items-center group">
+                <a href="tel:9974418119" className="flex items-center group">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors">
                     <Phone className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Call us</p>
-                    <p className="font-medium text-lg">+91 99774 41811</p>
+                    <p className="font-medium text-lg">+91 99744 18119</p>
                   </div>
                 </a>
                 
@@ -70,6 +70,19 @@ export default function Booking() {
                     <p className="font-medium text-lg">@MehendiByRiddhi</p>
                   </div>
                 </a>
+
+                <div className="flex items-start group">
+                  <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors shrink-0">
+                    <MapPin className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-400">Visit us</p>
+                    <p className="font-medium text-lg mb-1">Riddhi Prajapati</p>
+                    <p className="text-sm text-gray-300 leading-relaxed max-w-sm">
+                      804 Sun Aspire, Nr. Nilkanth villa bunglow, opp samprat residency, dps road bopal - shilaj, Ahmedabad - 380058
+                    </p>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -160,6 +173,26 @@ export default function Booking() {
             </motion.div>
           </div>
         </div>
+
+        {/* Google Maps Location */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-20 w-full h-96 rounded-2xl overflow-hidden shadow-2xl border border-white/10"
+        >
+          <iframe 
+            src="https://maps.google.com/maps?q=804%20Sun%20Aspire,%20Nr.%20Nilkanth%20villa%20bunglow,%20opp%20samprat%20residency,%20dps%20road%20bopal%20-%20shilaj,%20Ahmedabad,%20380058&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }} 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            title="MehendiByRiddhi Location"
+          ></iframe>
+        </motion.div>
       </div>
     </section>
   );
