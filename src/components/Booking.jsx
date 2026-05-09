@@ -18,7 +18,7 @@ export default function Booking() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const message = `Hi Riddhi! I would like to book a session.%0A%0A*Name:* ${formData.name}%0A*Service:* ${formData.event}%0A*Date:* ${formData.date}%0A*Location:* ${formData.location}%0A%0APlease let me know your availability and pricing.`;
-    window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+    window.open(`https://wa.me/99774418119?text=${message}`, '_blank');
   };
 
   return (
@@ -41,23 +41,23 @@ export default function Booking() {
               </p>
 
               <div className="space-y-6 mb-10">
-                <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="flex items-center group">
+                <a href="https://wa.me/99774418119" target="_blank" rel="noreferrer" className="flex items-center group">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors">
                     <MessageCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Chat with us</p>
-                    <p className="font-medium text-lg">+91 98765 43210</p>
+                    <p className="font-medium text-lg">+91 99774 41811</p>
                   </div>
                 </a>
                 
-                <a href="tel:+919876543210" className="flex items-center group">
+                <a href="tel:99774418119" className="flex items-center group">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors">
                     <Phone className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Call us</p>
-                    <p className="font-medium text-lg">+91 98765 43210</p>
+                    <p className="font-medium text-lg">+91 99774 41811</p>
                   </div>
                 </a>
                 

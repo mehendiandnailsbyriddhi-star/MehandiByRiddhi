@@ -2,45 +2,45 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: 'Bridal Mehndi',
-    price: '3000',
-    description: 'Intricate and traditional patterns covering full hands and legs, tailored to your love story.',
-    features: ['Custom couple portraits', 'Full arms to elbow', 'Legs up to knees', 'Premium organic henna'],
-    popular: true
-  },
-  {
-    title: 'Engagement / Party Mehndi',
-    price: '1500',
-    description: 'Elegant and beautiful designs for engagement, sangeet, and special occasions.',
-    features: ['Both hands front & back', 'Up to mid-arm', 'Custom motifs', 'Dark stain guarantee'],
+    title: 'Arabic Mehendi',
+    price: '300',
+    description: 'Elegant, quick, and beautiful flowing patterns.',
+    features: ['Wrist Length: ₹300', '4 Finger Above Wrist: ₹500', 'Half Hand: ₹800', 'Elbow: ₹1000'],
     popular: false
   },
   {
-    title: 'Guest / Minimal Mehndi',
-    price: '200',
-    description: 'Simple, delicate, and quick Arabic or minimal designs for wedding guests or festivals.',
-    features: ['Single side/strip', 'Quick application', 'Floral & geometric', 'Group bookings available'],
-    popular: false
-  },
-  {
-    title: 'Bridal Nail Extensions',
-    price: '2500',
-    description: 'Premium acrylic or gel extensions with intricate 3D nail art, perfect for your big day.',
-    features: ['Acrylic/Gel extensions', 'Custom 3D art & stones', 'Long-lasting finish', 'Cuticle care included'],
-    popular: true
-  },
-  {
-    title: 'Gel Polish & Nail Art',
-    price: '800',
-    description: 'Durable and glossy gel polish with custom hand-painted nail art designs.',
-    features: ['Lasts up to 3-4 weeks', 'Wide shade range', 'Hand-painted designs', 'Zero chipping'],
-    popular: false
-  },
-  {
-    title: 'Classic Manicure & Polish',
+    title: 'Traditional Mehendi',
     price: '500',
-    description: 'A refreshing manicure session finished with premium regular nail lacquer.',
-    features: ['Nail shaping & buffing', 'Cuticle cleaning', 'Hand massage', 'Premium regular polish'],
+    description: 'Classic and intricate traditional Indian patterns.',
+    features: ['Wrist Length: ₹500', '4 Finger Above Wrist: ₹800', 'Half Hand: ₹1500', 'Elbow: ₹2000'],
+    popular: true
+  },
+  {
+    title: 'Designer Mehendi',
+    price: '1000',
+    description: 'Bespoke contemporary designs tailored to your style.',
+    features: ['Wrist Length: ₹1000', '4 Finger Above Wrist: ₹2000', 'Half Hand: ₹3000', 'Elbow: ₹4000'],
+    popular: false
+  },
+  {
+    title: 'Engagement + Gol Dhana',
+    price: '1600',
+    description: 'Specialized intricate designs for your engagement day.',
+    features: ['Half Hand: ₹1600', 'Elbow Hand: ₹2100', 'Per Single Figure: ₹50', 'Per Couple Figure: ₹100'],
+    popular: false
+  },
+  {
+    title: 'Bridal Mehendi',
+    price: '5000',
+    description: 'Complete hands (front & back) and legs coverage for the bride.',
+    features: ['Basic Package: ₹5000+', 'Heavy Package: ₹7000+', 'Customize Bridal: ₹10000+'],
+    popular: true
+  },
+  {
+    title: 'Nail Art & Extensions',
+    price: '500',
+    description: 'Complete nail services from classic manicure to intricate 3D extensions.',
+    features: ['Classic Manicure: ₹500', 'Gel Polish & Art: ₹800', 'Bridal Extensions: ₹2500'],
     popular: false
   }
 ];

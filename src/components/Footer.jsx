@@ -76,7 +76,7 @@ export default function Footer() {
               <InstagramIcon className="w-5 h-5" />
             </a>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/99774418119"
               target="_blank"
               rel="noreferrer"
               className="text-gray-400 hover:text-[#C9A646] transition-colors"
@@ -84,7 +84,7 @@ export default function Footer() {
               <MessageCircle className="w-5 h-5" />
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:99774418119"
               className="text-gray-400 hover:text-[#C9A646] transition-colors"
             >
               <Phone className="w-5 h-5" />
