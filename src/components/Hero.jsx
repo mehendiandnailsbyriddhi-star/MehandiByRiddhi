@@ -39,7 +39,7 @@ export default function Hero() {
             className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-[#C9A646] text-[#1F3D2B] px-6 py-2 rounded-full font-bold flex items-center shadow-xl border-2 border-white/20 whitespace-nowrap text-sm"
           >
             <Award className="w-4 h-4 mr-2" />
-            Premium Mehndi & Nail Artist
+            Top Mehndi & Nail Artist in Bopal
           </motion.div>
 
           {/* Subheading */}
@@ -65,7 +65,7 @@ export default function Hero() {
             }}
             className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight drop-shadow-lg"
           >
-            {"Elegant Mehndi & Nail Art for ".split(" ").map((word, i) => (
+            {"Beautiful Mehndi & Nail Art for ".split(" ").map((word, i) => (
               <motion.span 
                 key={`word-1-${i}`} 
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
@@ -75,7 +75,7 @@ export default function Hero() {
               </motion.span>
             ))}
             <br className="hidden md:block" />
-            {"Your Special Moments".split(" ").map((word, i) => (
+            {"Your Special Day".split(" ").map((word, i) => (
               <motion.span 
                 key={`word-2-${i}`} 
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
@@ -93,7 +93,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-gray-200 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed"
           >
-            Experience the art of intricate henna designs and flawless nail art tailored specifically for you, blending rich tradition with modern aesthetics.
+            Get the best henna designs and perfect nail art made just for you in Bopal, Ahmedabad. We mix old traditions with new styles.
           </motion.p>
           
           {/* Action Area */}

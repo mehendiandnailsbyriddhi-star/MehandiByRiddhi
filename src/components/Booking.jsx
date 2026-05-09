@@ -34,10 +34,10 @@ export default function Booking() {
               transition={{ duration: 0.6 }}
             >
               <span className="text-[#C9A646] font-medium tracking-wider uppercase text-sm">Let's Connect</span>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6 text-white">Book Your Session</h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6 text-white">Book Your Appointment</h2>
               <p className="text-gray-300 mb-8 text-lg font-light leading-relaxed">
-                Whether it's your big day or a special celebration, let's create something beautiful together. 
-                <span className="block mt-2 font-medium text-[#C9A646]">Limited slots available – Book in advance to secure your date!</span>
+                Whether it's your big day or a simple party, book the top mehandi and nail artist in Bopal today. 
+                <span className="block mt-2 font-medium text-[#C9A646]">Spots fill up fast – Book early to secure your date!</span>
               </p>
 
               <div className="space-y-6 mb-10">

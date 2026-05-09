@@ -50,10 +50,10 @@ export default function Services() {
     <section id="services" className="py-24 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
-          <span className="text-[#C9A646] font-medium tracking-wider uppercase text-sm">Invest in Art</span>
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-[#1F3D2B] mt-2 mb-4">Services & Pricing</h2>
+          <span className="text-[#C9A646] font-medium tracking-wider uppercase text-sm">Best Mehndi & Nail Artist in Bopal</span>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-[#1F3D2B] mt-2 mb-4">Our Services & Pricing</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We use only 100% natural, organic henna for a rich, dark, and safe stain. 
+            We use 100% natural henna for a dark, safe color. Check out our affordable mehndi and nail packages in Bopal.
           </p>
         </div>
 

@@ -15,37 +15,37 @@ const portfolioItems = [
     id: 1,
     src: "/bridal.png",
     category: "Bridal Mehndi",
-    alt: "Bridal Mehndi Design",
+    alt: "Beautiful Bridal Mehandi Design in Bopal by Riddhi",
   },
   {
     id: 2,
     src: "/arabic.png",
     category: "Arabic Mehndi",
-    alt: "Arabic Mehndi Design",
+    alt: "Stunning Arabic Mehandi Design in Bopal",
   },
   {
     id: 3,
     src: "/minimal.png",
     category: "Minimal Mehndi",
-    alt: "Minimal Mehndi Design",
+    alt: "Simple and Minimalist Mehandi Design Ahmedabad",
   },
   {
     id: 4,
     src: "/custom.png",
     category: "Custom Designs",
-    alt: "Custom Mehndi Design",
+    alt: "Custom Henna and Nail Art Designs by Best Artist in Bopal",
   },
   {
     id: 5,
     src: "/bridal.png",
     category: "Bridal Mehndi",
-    alt: "Bridal Mehndi Details",
+    alt: "Heavy Bridal Mehandi Details Bopal Ahmedabad",
   },
   {
     id: 6,
     src: "/arabic.png",
     category: "Arabic Mehndi",
-    alt: "Arabic Backhand Design",
+    alt: "Arabic Backhand Mehandi Design in Bopal",
   },
 ];
 

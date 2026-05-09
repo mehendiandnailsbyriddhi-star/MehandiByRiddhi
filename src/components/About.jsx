@@ -37,13 +37,13 @@ export default function About() {
             
             <div className="space-y-4 text-gray-600 font-light text-lg leading-relaxed mb-8">
               <p>
-                Hi! I'm Riddhi, a passionate mehndi and nail artist dedicated to making your special moments even more memorable with beautiful henna and stunning nails.
+                Hi! I am Riddhi, the top mehndi and nail artist in Bopal, Ahmedabad. I love making your big days special with beautiful henna and amazing nail art.
               </p>
               <p>
-                With years of experience specializing in bridal and contemporary mehndi, alongside certified expertise in premium nail extensions and art, I pride myself on extreme attention to detail. I create customized patterns and nail designs that reflect your unique personality and love story.
+                I have many years of experience in bridal and modern mehndi, as well as premium nail extensions. I pay close attention to every detail and create custom designs that match your style.
               </p>
               <p>
-                My henna paste is 100% natural, organic, and freshly made, ensuring a deep, rich, and long-lasting stain safely. Let's create magic together!
+                My henna is 100% natural, safe, and made fresh for a dark, long-lasting color. Let's create beautiful art together!
               </p>
             </div>
             
