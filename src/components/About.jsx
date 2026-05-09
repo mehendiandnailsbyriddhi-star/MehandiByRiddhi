@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import artistImage from '../assets/artist.jpeg';
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
           >
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] max-w-md mx-auto">
               <img 
-                src="/profile.png" 
+                src={artistImage} 
                 alt="Riddhi - Mehendi Artist" 
                 className="w-full h-full object-cover"
                 loading="lazy"
