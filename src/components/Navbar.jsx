@@ -28,8 +28,8 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#home" className={`text-xl md:text-2xl font-bold font-heading ${isScrolled ? 'text-[#1F3D2B]' : 'text-white'}`}>
-          Mehndi & Nails By<span className="text-[#C9A646]">Riddhi</span>
+        <a href="#home" className="flex items-center">
+          <img src="/logo.png" alt="Mehndi & Nails By Riddhi" className="h-10 md:h-14 w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
