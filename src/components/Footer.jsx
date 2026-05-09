@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <a
               href="#home"
-              className="inline-block mb-6"
+              className="text-3xl font-bold font-heading inline-block mb-4"
             >
-              <img src="/logo.png" alt="Mehndi & Nails By Riddhi" className="h-14 w-auto object-contain" />
+              Mehandi & Nails By<span className="text-[#C9A646]">Riddhi</span>
             </a>
             <p className="text-gray-400 max-w-sm text-sm font-light">
               Elevating your special moments with premium, bespoke mehndi
