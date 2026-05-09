@@ -24,12 +24,12 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#FFF8E7] shadow-md py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-[#FFF8E7]/80 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#home" className={`text-2xl font-bold font-heading ${isScrolled ? 'text-[#1F3D2B]' : 'text-white'}`}>
-          MehndiBy<span className="text-[#C9A646]">Riddhi</span>
+        <a href="#home" className={`text-xl md:text-2xl font-bold font-heading ${isScrolled ? 'text-[#1F3D2B]' : 'text-white'}`}>
+          Mehndi & Nails By<span className="text-[#C9A646]">Riddhi</span>
         </a>
 
         {/* Desktop Nav */}
@@ -56,6 +56,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           className="md:hidden"
+          aria-label="Toggle Navigation Menu"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (

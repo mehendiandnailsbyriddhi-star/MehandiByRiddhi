@@ -9,7 +9,7 @@ const services = [
     popular: true
   },
   {
-    title: 'Engagement / Party',
+    title: 'Engagement / Party Mehndi',
     price: '1500',
     description: 'Elegant and beautiful designs for engagement, sangeet, and special occasions.',
     features: ['Both hands front & back', 'Up to mid-arm', 'Custom motifs', 'Dark stain guarantee'],
@@ -20,6 +20,27 @@ const services = [
     price: '200',
     description: 'Simple, delicate, and quick Arabic or minimal designs for wedding guests or festivals.',
     features: ['Single side/strip', 'Quick application', 'Floral & geometric', 'Group bookings available'],
+    popular: false
+  },
+  {
+    title: 'Bridal Nail Extensions',
+    price: '2500',
+    description: 'Premium acrylic or gel extensions with intricate 3D nail art, perfect for your big day.',
+    features: ['Acrylic/Gel extensions', 'Custom 3D art & stones', 'Long-lasting finish', 'Cuticle care included'],
+    popular: true
+  },
+  {
+    title: 'Gel Polish & Nail Art',
+    price: '800',
+    description: 'Durable and glossy gel polish with custom hand-painted nail art designs.',
+    features: ['Lasts up to 3-4 weeks', 'Wide shade range', 'Hand-painted designs', 'Zero chipping'],
+    popular: false
+  },
+  {
+    title: 'Classic Manicure & Polish',
+    price: '500',
+    description: 'A refreshing manicure session finished with premium regular nail lacquer.',
+    features: ['Nail shaping & buffing', 'Cuticle cleaning', 'Hand massage', 'Premium regular polish'],
     popular: false
   }
 ];
@@ -42,6 +63,7 @@ export default function Services() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              whileHover={{ y: -8, scale: 1.02 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               key={service.title}
               className={`relative bg-[#FFF8E7] rounded-2xl p-8 border ${

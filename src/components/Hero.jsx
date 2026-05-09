@@ -3,7 +3,7 @@ import { Star, ChevronDown, Award } from 'lucide-react';
 
 export default function Hero() {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Hi Riddhi! I'm interested in booking a mehndi session. Can we discuss details?");
+    const message = encodeURIComponent("Hi Riddhi! I'm interested in booking a mehndi or nail art session. Can we discuss details?");
     window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
   };
 
@@ -39,7 +39,7 @@ export default function Hero() {
             className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-[#C9A646] text-[#1F3D2B] px-6 py-2 rounded-full font-bold flex items-center shadow-xl border-2 border-white/20 whitespace-nowrap text-sm"
           >
             <Award className="w-4 h-4 mr-2" />
-            Premium Bridal Artist
+            Premium Mehndi & Nail Artist
           </motion.div>
 
           {/* Subheading */}
@@ -49,17 +49,41 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="block text-[#C9A646] font-medium tracking-[0.2em] uppercase mb-6 text-sm md:text-base"
           >
-            Bridal | Engagement | Custom Designs
+            Bridal Mehndi | Nail Extensions | Custom Art
           </motion.span>
           
           {/* Main Heading */}
           <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: { staggerChildren: 0.1, delayChildren: 0.4 }
+              }
+            }}
             className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight drop-shadow-lg"
           >
-            Elegant Mehndi Designs for <br className="hidden md:block" /> Your Special Moments
+            {"Elegant Mehndi & Nail Art for ".split(" ").map((word, i) => (
+              <motion.span 
+                key={`word-1-${i}`} 
+                variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+                className="inline-block mr-[0.25em]"
+              >
+                {word}
+              </motion.span>
+            ))}
+            <br className="hidden md:block" />
+            {"Your Special Moments".split(" ").map((word, i) => (
+              <motion.span 
+                key={`word-2-${i}`} 
+                variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+                className="inline-block mr-[0.25em]"
+              >
+                {word}
+              </motion.span>
+            ))}
           </motion.h1>
           
           {/* Description */}
@@ -69,7 +93,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-gray-200 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed"
           >
-            Experience the art of intricate henna designs tailored specifically for you, blending rich tradition with modern aesthetics.
+            Experience the art of intricate henna designs and flawless nail art tailored specifically for you, blending rich tradition with modern aesthetics.
           </motion.p>
           
           {/* Action Area */}

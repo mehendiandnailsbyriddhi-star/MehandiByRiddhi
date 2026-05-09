@@ -37,10 +37,10 @@ export default function About() {
             
             <div className="space-y-4 text-gray-600 font-light text-lg leading-relaxed mb-8">
               <p>
-                Hi! I'm Riddhi, a passionate mehndi artist dedicated to making your special moments even more memorable with beautiful, intricate henna designs.
+                Hi! I'm Riddhi, a passionate mehndi and nail artist dedicated to making your special moments even more memorable with beautiful henna and stunning nails.
               </p>
               <p>
-                With years of experience specializing in bridal and contemporary mehndi, I pride myself on extreme attention to detail and creating customized patterns that reflect your unique personality and love story.
+                With years of experience specializing in bridal and contemporary mehndi, alongside certified expertise in premium nail extensions and art, I pride myself on extreme attention to detail. I create customized patterns and nail designs that reflect your unique personality and love story.
               </p>
               <p>
                 My henna paste is 100% natural, organic, and freshly made, ensuring a deep, rich, and long-lasting stain safely. Let's create magic together!

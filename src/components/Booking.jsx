@@ -17,7 +17,7 @@ export default function Booking() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const message = `Hi Riddhi! I would like to book a session.%0A%0A*Name:* ${formData.name}%0A*Event:* ${formData.event}%0A*Date:* ${formData.date}%0A*Location:* ${formData.location}%0A%0APlease let me know your availability and pricing.`;
+    const message = `Hi Riddhi! I would like to book a session.%0A%0A*Name:* ${formData.name}%0A*Service:* ${formData.event}%0A*Date:* ${formData.date}%0A*Location:* ${formData.location}%0A%0APlease let me know your availability and pricing.`;
     window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
   };
 
@@ -34,7 +34,7 @@ export default function Booking() {
               transition={{ duration: 0.6 }}
             >
               <span className="text-[#C9A646] font-medium tracking-wider uppercase text-sm">Let's Connect</span>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6 text-white">Book Your Mehndi Session</h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6 text-white">Book Your Session</h2>
               <p className="text-gray-300 mb-8 text-lg font-light leading-relaxed">
                 Whether it's your big day or a special celebration, let's create something beautiful together. 
                 <span className="block mt-2 font-medium text-[#C9A646]">Limited slots available – Book in advance to secure your date!</span>
@@ -99,7 +99,7 @@ export default function Booking() {
                 </div>
                 
                 <div>
-                  <label htmlFor="event" className="block text-sm font-medium text-gray-700 mb-1">Event Type</label>
+                  <label htmlFor="event" className="block text-sm font-medium text-gray-700 mb-1">Service Required</label>
                   <select 
                     id="event" 
                     name="event"
@@ -108,10 +108,13 @@ export default function Booking() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C9A646] focus:border-transparent outline-none transition-all text-gray-800 bg-white"
                   >
-                    <option value="" disabled>Select event type</option>
-                    <option value="Bridal">Bridal Mehndi</option>
-                    <option value="Engagement">Engagement</option>
-                    <option value="Guest">Guest/Party Mehndi</option>
+                    <option value="" disabled>Select a service</option>
+                    <option value="Bridal Combo">Bridal Combo (Mehndi + Nails)</option>
+                    <option value="Bridal Mehndi">Bridal Mehndi</option>
+                    <option value="Bridal Nails">Bridal Nail Extensions</option>
+                    <option value="Engagement Mehndi">Engagement / Party Mehndi</option>
+                    <option value="Guest Mehndi">Guest Mehndi</option>
+                    <option value="Nail Art">Nail Art / Manicure</option>
                     <option value="Other">Other</option>
                   </select>
                 </div>
@@ -124,6 +127,7 @@ export default function Booking() {
                       id="date" 
                       name="date"
                       required
+                      min={new Date().toISOString().split('T')[0]}
                       value={formData.date}
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C9A646] focus:border-transparent outline-none transition-all text-gray-800"

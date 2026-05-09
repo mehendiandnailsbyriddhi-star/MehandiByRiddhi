@@ -1,43 +1,83 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, ZoomIn } from 'lucide-react';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, ZoomIn } from "lucide-react";
 
-const categories = ['All', 'Bridal Mehndi', 'Arabic Mehndi', 'Minimal Mehndi', 'Custom Designs'];
+const categories = [
+  "All",
+  "Bridal Mehndi",
+  "Arabic Mehndi",
+  "Minimal Mehndi",
+  "Custom Designs",
+];
 
 const portfolioItems = [
-  { id: 1, src: '/bridal.png', category: 'Bridal Mehndi', alt: 'Bridal Mehndi Design' },
-  { id: 2, src: '/arabic.png', category: 'Arabic Mehndi', alt: 'Arabic Mehndi Design' },
-  { id: 3, src: '/minimal.png', category: 'Minimal Mehndi', alt: 'Minimal Mehndi Design' },
-  { id: 4, src: '/custom.png', category: 'Custom Designs', alt: 'Custom Mehndi Design' },
-  { id: 5, src: '/bridal.png', category: 'Bridal Mehndi', alt: 'Bridal Mehndi Details' },
-  { id: 6, src: '/arabic.png', category: 'Arabic Mehndi', alt: 'Arabic Backhand Design' },
+  {
+    id: 1,
+    src: "/bridal.png",
+    category: "Bridal Mehndi",
+    alt: "Bridal Mehndi Design",
+  },
+  {
+    id: 2,
+    src: "/arabic.png",
+    category: "Arabic Mehndi",
+    alt: "Arabic Mehndi Design",
+  },
+  {
+    id: 3,
+    src: "/minimal.png",
+    category: "Minimal Mehndi",
+    alt: "Minimal Mehndi Design",
+  },
+  {
+    id: 4,
+    src: "/custom.png",
+    category: "Custom Designs",
+    alt: "Custom Mehndi Design",
+  },
+  {
+    id: 5,
+    src: "/bridal.png",
+    category: "Bridal Mehndi",
+    alt: "Bridal Mehndi Details",
+  },
+  {
+    id: 6,
+    src: "/arabic.png",
+    category: "Arabic Mehndi",
+    alt: "Arabic Backhand Design",
+  },
 ];
 
 export default function Portfolio() {
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const filteredItems = activeCategory === 'All' 
-    ? portfolioItems 
-    : portfolioItems.filter(item => item.category === activeCategory);
+  const filteredItems =
+    activeCategory === "All"
+      ? portfolioItems
+      : portfolioItems.filter((item) => item.category === activeCategory);
 
   return (
     <section id="portfolio" className="py-24 bg-[#FFF8E7]">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
-          <span className="text-[#C9A646] font-medium tracking-wider uppercase text-sm">Our Work</span>
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-[#1F3D2B] mt-2 mb-6">Portfolio</h2>
-          
+          <span className="text-[#C9A646] font-medium tracking-wider uppercase text-sm">
+            Our Work
+          </span>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-[#1F3D2B] mt-2 mb-6">
+            Portfolio
+          </h2>
+
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
-                  activeCategory === category
-                    ? 'bg-[#1F3D2B] text-white'
-                    : 'bg-white text-[#1F3D2B] border border-[#1F3D2B]/10 hover:border-[#C9A646]'
-                }`}
+                className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === category
+                    ? "bg-[#1F3D2B] text-white"
+                    : "bg-white text-[#1F3D2B] border border-[#1F3D2B]/10 hover:border-[#C9A646]"
+                  }`}
               >
                 {category}
               </button>
@@ -45,7 +85,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <motion.div 
+        <motion.div
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
@@ -61,9 +101,9 @@ export default function Portfolio() {
                 className="relative group overflow-hidden rounded-xl cursor-pointer aspect-square bg-white shadow-sm"
                 onClick={() => setSelectedImage(item)}
               >
-                <img 
-                  src={item.src} 
-                  alt={item.alt} 
+                <img
+                  src={item.src}
+                  alt={item.alt}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -89,7 +129,7 @@ export default function Portfolio() {
             className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4"
             onClick={() => setSelectedImage(null)}
           >
-            <button 
+            <button
               className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
               onClick={() => setSelectedImage(null)}
             >
