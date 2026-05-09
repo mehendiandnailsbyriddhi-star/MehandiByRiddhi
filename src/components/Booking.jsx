@@ -36,7 +36,7 @@ export default function Booking() {
               <span className="text-[#C9A646] font-medium tracking-wider uppercase text-sm">Let's Connect</span>
               <h2 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6 text-white">Book Your Appointment</h2>
               <p className="text-gray-300 mb-8 text-lg font-light leading-relaxed">
-                Whether it's your big day or a simple party, book the top mehendi and nail artist in Bopal today. 
+                Whether it's your big day or a simple party, book the top Mehendi and nail artist in Bopal today. 
                 <span className="block mt-2 font-medium text-[#C9A646]">Spots fill up fast – Book early to secure your date!</span>
               </p>
 

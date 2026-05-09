@@ -17,7 +17,7 @@ const testimonials = [
     id: 3,
     name: 'Sneha Desai',
     role: 'Bridesmaid',
-    text: 'Quick, neat, and stunning designs for all the bridesmaids. She is very patient and accommodating. The best mehendi artist in town! ✨',
+    text: 'Quick, neat, and stunning designs for all the bridesmaids. She is very patient and accommodating. The best Mehendi artist in town! ✨',
   }
 ];
 
