@@ -36,7 +36,7 @@ export default function Booking() {
               <span className="text-[#C9A646] font-medium tracking-wider uppercase text-sm">Let's Connect</span>
               <h2 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6 text-white">Book Your Appointment</h2>
               <p className="text-gray-300 mb-8 text-lg font-light leading-relaxed">
-                Whether it's your big day or a simple party, book the top mehandi and nail artist in Bopal today. 
+                Whether it's your big day or a simple party, book the top mehendi and nail artist in Bopal today. 
                 <span className="block mt-2 font-medium text-[#C9A646]">Spots fill up fast – Book early to secure your date!</span>
               </p>
 
@@ -67,7 +67,7 @@ export default function Booking() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Follow our work</p>
-                    <p className="font-medium text-lg">@MehndiByRiddhi</p>
+                    <p className="font-medium text-lg">@MehendiByRiddhi</p>
                   </div>
                 </a>
               </div>
@@ -109,11 +109,11 @@ export default function Booking() {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C9A646] focus:border-transparent outline-none transition-all text-gray-800 bg-white"
                   >
                     <option value="" disabled>Select a service</option>
-                    <option value="Bridal Combo">Bridal Combo (Mehndi + Nails)</option>
-                    <option value="Bridal Mehndi">Bridal Mehndi</option>
+                    <option value="Bridal Combo">Bridal Combo (Mehendi + Nails)</option>
+                    <option value="Bridal Mehendi">Bridal Mehendi</option>
                     <option value="Bridal Nails">Bridal Nail Extensions</option>
-                    <option value="Engagement Mehndi">Engagement / Party Mehndi</option>
-                    <option value="Guest Mehndi">Guest Mehndi</option>
+                    <option value="Engagement Mehendi">Engagement / Party Mehendi</option>
+                    <option value="Guest Mehendi">Guest Mehendi</option>
                     <option value="Nail Art">Nail Art / Manicure</option>
                     <option value="Other">Other</option>
                   </select>

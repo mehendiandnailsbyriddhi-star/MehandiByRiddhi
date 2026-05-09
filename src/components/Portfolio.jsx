@@ -4,9 +4,9 @@ import { X, ZoomIn } from "lucide-react";
 
 const categories = [
   "All",
-  "Bridal Mehndi",
-  "Arabic Mehndi",
-  "Minimal Mehndi",
+  "Bridal Mehendi",
+  "Arabic Mehendi",
+  "Minimal Mehendi",
   "Custom Designs",
 ];
 
@@ -14,20 +14,20 @@ const portfolioItems = [
   {
     id: 1,
     src: "/bridal.png",
-    category: "Bridal Mehndi",
-    alt: "Beautiful Bridal Mehandi Design in Bopal by Riddhi",
+    category: "Bridal Mehendi",
+    alt: "Beautiful Bridal Mehendi Design in Bopal by Riddhi",
   },
   {
     id: 2,
     src: "/arabic.png",
-    category: "Arabic Mehndi",
-    alt: "Stunning Arabic Mehandi Design in Bopal",
+    category: "Arabic Mehendi",
+    alt: "Stunning Arabic Mehendi Design in Bopal",
   },
   {
     id: 3,
     src: "/minimal.png",
-    category: "Minimal Mehndi",
-    alt: "Simple and Minimalist Mehandi Design Ahmedabad",
+    category: "Minimal Mehendi",
+    alt: "Simple and Minimalist Mehendi Design Ahmedabad",
   },
   {
     id: 4,
@@ -38,14 +38,14 @@ const portfolioItems = [
   {
     id: 5,
     src: "/bridal.png",
-    category: "Bridal Mehndi",
-    alt: "Heavy Bridal Mehandi Details Bopal Ahmedabad",
+    category: "Bridal Mehendi",
+    alt: "Heavy Bridal Mehendi Details Bopal Ahmedabad",
   },
   {
     id: 6,
     src: "/arabic.png",
-    category: "Arabic Mehndi",
-    alt: "Arabic Backhand Mehandi Design in Bopal",
+    category: "Arabic Mehendi",
+    alt: "Arabic Backhand Mehendi Design in Bopal",
   },
 ];
 

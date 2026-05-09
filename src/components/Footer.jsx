@@ -11,10 +11,10 @@ export default function Footer() {
               href="#home"
               className="text-3xl font-bold font-heading inline-block mb-4"
             >
-              Mehandi & Nails By<span className="text-[#C9A646]">Riddhi</span>
+              Mehendi & Nails By<span className="text-[#C9A646]">Riddhi</span>
             </a>
             <p className="text-gray-400 max-w-sm text-sm font-light">
-              Your trusted Mehndi and Nail Artist in Bopal, Ahmedabad. We make your special moments beautiful with safe, natural henna and premium nail art.
+              Your trusted Mehendi and Nail Artist in Bopal, Ahmedabad. We make your special moments beautiful with safe, natural henna and premium nail art.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm flex items-center">
-            &copy; {new Date().getFullYear()} MehndiByRiddhi. All rights
+            &copy; {new Date().getFullYear()} MehendiByRiddhi. All rights
             reserved.
           </p>
 

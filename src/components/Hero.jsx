@@ -3,7 +3,7 @@ import { Star, ChevronDown, Award } from 'lucide-react';
 
 export default function Hero() {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Hi Riddhi! I'm interested in booking a mehndi or nail art session. Can we discuss details?");
+    const message = encodeURIComponent("Hi Riddhi! I'm interested in booking a mehendi or nail art session. Can we discuss details?");
     window.open(`https://wa.me/99774418119?text=${message}`, '_blank');
   };
 
@@ -39,7 +39,7 @@ export default function Hero() {
             className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-[#C9A646] text-[#1F3D2B] px-6 py-2 rounded-full font-bold flex items-center shadow-xl border-2 border-white/20 whitespace-nowrap text-sm"
           >
             <Award className="w-4 h-4 mr-2" />
-            Top Mehndi & Nail Artist in Bopal
+            Top Mehendi & Nail Artist in Bopal
           </motion.div>
 
           {/* Subheading */}
@@ -49,7 +49,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="block text-[#C9A646] font-medium tracking-[0.2em] uppercase mb-6 text-sm md:text-base"
           >
-            Bridal Mehndi | Nail Extensions | Custom Art
+            Bridal Mehendi | Nail Extensions | Custom Art
           </motion.span>
           
           {/* Main Heading */}
@@ -65,7 +65,7 @@ export default function Hero() {
             }}
             className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight drop-shadow-lg"
           >
-            {"Beautiful Mehndi & Nail Art for ".split(" ").map((word, i) => (
+            {"Beautiful Mehendi & Nail Art for ".split(" ").map((word, i) => (
               <motion.span 
                 key={`word-1-${i}`} 
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}

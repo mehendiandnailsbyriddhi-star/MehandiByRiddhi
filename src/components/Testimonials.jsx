@@ -11,13 +11,13 @@ const testimonials = [
     id: 2,
     name: 'Ananya Patel',
     role: 'Engagement Client',
-    text: 'I booked MehndiByRiddhi for my engagement and everyone loved the design. It was elegant, modern, and the color came out beautifully. Will definitely book again!',
+    text: 'I booked MehendiByRiddhi for my engagement and everyone loved the design. It was elegant, modern, and the color came out beautifully. Will definitely book again!',
   },
   {
     id: 3,
     name: 'Sneha Desai',
     role: 'Bridesmaid',
-    text: 'Quick, neat, and stunning designs for all the bridesmaids. She is very patient and accommodating. The best mehndi artist in town! ✨',
+    text: 'Quick, neat, and stunning designs for all the bridesmaids. She is very patient and accommodating. The best mehendi artist in town! ✨',
   }
 ];
 
