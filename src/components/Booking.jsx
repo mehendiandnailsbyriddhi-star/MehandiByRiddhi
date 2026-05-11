@@ -185,7 +185,7 @@ export default function Booking() {
           className="mt-20 w-full h-96 rounded-2xl overflow-hidden shadow-2xl border border-white/10"
         >
           <iframe 
-            src="https://maps.google.com/maps?q=Sun%20Aspire,%20Ahmedabad&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            src="https://maps.google.com/maps?q=23.0444464,72.4663209&t=&z=17&ie=UTF8&iwloc=&output=embed" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
@@ -195,6 +195,7 @@ export default function Booking() {
             title="Sun Aspire Location Map"
           ></iframe>
         </m.div>
+
 
       </div>
     </section>
