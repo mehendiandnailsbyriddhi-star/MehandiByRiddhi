@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { X, ZoomIn } from "lucide-react";
 
 const categories = [
@@ -69,10 +69,12 @@ export default function Portfolio() {
             Portfolio
           </h2>
 
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
+          <div className="flex flex-wrap justify-center gap-4 mt-8" role="tablist">
             {categories.map((category) => (
               <button
                 key={category}
+                role="tab"
+                aria-selected={activeCategory === category}
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === category
                     ? "bg-[#1F3D2B] text-white"
@@ -85,68 +87,78 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <motion.div
+        <m.div
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          <AnimatePresence>
+          <AnimatePresence mode="popLayout">
             {filteredItems.map((item) => (
-              <motion.div
+              <m.div
                 key={item.id}
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className="relative group overflow-hidden rounded-xl cursor-pointer aspect-square bg-white shadow-sm"
+                className="relative group overflow-hidden rounded-xl cursor-pointer aspect-square bg-white shadow-sm focus-within:ring-2 focus-within:ring-[#C9A646]"
                 onClick={() => setSelectedImage(item)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => e.key === 'Enter' && setSelectedImage(item)}
+                aria-label={`View ${item.alt}`}
               >
                 <img
                   src={item.src}
                   alt={item.alt}
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-[#1F3D2B]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
-                  <ZoomIn className="text-white w-10 h-10 mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300" />
+                  <ZoomIn className="text-white w-10 h-10 mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300" aria-hidden="true" />
                   <span className="text-white font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
                     {item.category}
                   </span>
                 </div>
-              </motion.div>
+              </m.div>
             ))}
           </AnimatePresence>
-        </motion.div>
+        </m.div>
       </div>
 
       {/* Lightbox */}
       <AnimatePresence>
         {selectedImage && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4"
             onClick={() => setSelectedImage(null)}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Image Lightbox"
           >
             <button
-              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors p-2"
               onClick={() => setSelectedImage(null)}
+              aria-label="Close lightbox"
             >
-              <X className="w-8 h-8" />
+              <X className="w-8 h-8" aria-hidden="true" />
             </button>
-            <motion.img
+            <m.img
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
               src={selectedImage.src}
               alt={selectedImage.alt}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </section>
   );
 }
+

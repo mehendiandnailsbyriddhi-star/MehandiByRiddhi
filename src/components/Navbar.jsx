@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,7 +10,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -26,9 +26,10 @@ export default function Navbar() {
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-[#FFF8E7]/80 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
       }`}
+      aria-label="Main Navigation"
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#home" className={`text-xl md:text-2xl font-bold font-heading ${isScrolled ? 'text-[#1F3D2B]' : 'text-white'}`}>
+        <a href="#home" className={`text-xl md:text-2xl font-bold font-heading ${isScrolled ? 'text-[#1F3D2B]' : 'text-white'}`} aria-label="Mehendi & Nails By Riddhi Home">
           Mehendi & Nails By<span className="text-[#C9A646]">Riddhi</span>
         </a>
 
@@ -55,14 +56,15 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden"
-          aria-label="Toggle Navigation Menu"
+          className="md:hidden p-2"
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMobileMenuOpen}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
-            <X className={isScrolled ? 'text-[#1F3D2B]' : 'text-white'} />
+            <X className={isScrolled ? 'text-[#1F3D2B]' : 'text-white'} aria-hidden="true" />
           ) : (
-            <Menu className={isScrolled ? 'text-[#1F3D2B]' : 'text-white'} />
+            <Menu className={isScrolled ? 'text-[#1F3D2B]' : 'text-white'} aria-hidden="true" />
           )}
         </button>
       </div>
@@ -70,7 +72,7 @@ export default function Navbar() {
       {/* Mobile Nav */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
@@ -82,7 +84,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-[#1F3D2B] font-medium hover:text-[#C9A646]"
+                  className="text-[#1F3D2B] font-medium hover:text-[#C9A646] py-2"
                 >
                   {link.name}
                 </a>
@@ -95,9 +97,10 @@ export default function Navbar() {
                 Book Now
               </a>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </nav>
   );
 }
+

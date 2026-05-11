@@ -3,26 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#1F3D2B" />
+    
+    <!-- Preconnect to external origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta
-      name="description"
-      content="Looking for the best Mehendi and Nail Artist in Bopal? Mehendi By Riddhi offers beautiful bridal Mehendi, engagement henna, and premium nail art extensions. Book your session today!"
-    />
-    <meta name="keywords" content="Mehendi artist in Bopal, mehndi artist in Bopal, mehandi artist in Bopal, best Mehendi artist in Bopal, nail artist in Bopal, best nail artist in Bopal, bridal Mehendi Bopal, nail extensions Bopal, henna artist Bopal, Mehendi By Riddhi" />
-    <meta
-      property="og:title"
-      content="Best Mehendi & Nail Artist in Bopal | Mehendi By Riddhi"
-    />
-    <meta
-      property="og:description"
-      content="Looking for the best Mehendi and Nail Artist in Bopal? Mehendi By Riddhi offers beautiful bridal Mehendi, engagement henna, and premium nail art extensions."
-    />
-    <meta property="og:image" content="/hero_bg.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_IN" />
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" as="image" href="/hero_bg.png" />
+    
     <title>Best Mehendi & Nail Artist in Bopal | Mehendi By Riddhi</title>
+    
+    <meta name="description" content="Looking for the best Mehendi and Nail Artist in Bopal? Mehendi By Riddhi offers beautiful bridal Mehendi, engagement henna, and premium nail art extensions. Book your session today!" />
+    <meta name="keywords" content="Mehendi artist in Bopal, mehndi artist in Bopal, mehandi artist in Bopal, best Mehendi artist in Bopal, nail artist in Bopal, best nail artist in Bopal, bridal Mehendi Bopal, nail extensions Bopal, henna artist Bopal, Mehendi By Riddhi" />
+    <link rel="canonical" href="https://mehendibyriddhi.in/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mehendibyriddhi.in/" />
+    <meta property="og:title" content="Best Mehendi & Nail Artist in Bopal | Mehendi By Riddhi" />
+    <meta property="og:description" content="Looking for the best Mehendi and Nail Artist in Bopal? Mehendi By Riddhi offers beautiful bridal Mehendi and premium nail art extensions." />
+    <meta property="og:image" content="https://mehendibyriddhi.in/hero_bg.png" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mehendibyriddhi.in/" />
+    <meta property="twitter:title" content="Best Mehendi & Nail Artist in Bopal | Mehendi By Riddhi" />
+    <meta property="twitter:description" content="Premium Mehendi and Nail Artist in Bopal. Bridal Mehendi, Engagement Henna, and Nail Art." />
+    <meta property="twitter:image" content="https://mehendibyriddhi.in/hero_bg.png" />
+
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -30,6 +44,10 @@
       "name": "Mehendi By Riddhi",
       "image": "https://mehendibyriddhi.in/logo.png",
       "description": "Premium Mehendi and Nail Artist based in Bopal, Ahmedabad. Specializing in Bridal Mehendi, Engagement Henna, and Custom Nail Extensions.",
+      "@id": "https://mehendibyriddhi.in/#organization",
+      "url": "https://mehendibyriddhi.in",
+      "telephone": "+919974418119",
+      "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "804 Sun Aspire, Nr. Nilkanth villa bunglow, opp samprat residency, dps road bopal - shilaj",
@@ -38,9 +56,25 @@
         "postalCode": "380058",
         "addressCountry": "IN"
       },
-      "telephone": "+919974418119",
-      "priceRange": "₹₹",
-      "url": "https://mehendibyriddhi.in",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.0333,
+        "longitude": 72.4667
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
       "sameAs": [
         "https://instagram.com/MehendiByRiddhi"
       ]

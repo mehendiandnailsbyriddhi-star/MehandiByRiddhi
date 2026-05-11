@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Phone, MessageCircle, MapPin } from 'lucide-react';
 import InstagramIcon from './InstagramIcon';
 
@@ -27,7 +27,7 @@ export default function Booking() {
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
           <div className="lg:w-1/2">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -41,9 +41,9 @@ export default function Booking() {
               </p>
 
               <div className="space-y-6 mb-10">
-                <a href="https://wa.me/9974418119" target="_blank" rel="noreferrer" className="flex items-center group">
+                <a href="https://wa.me/9974418119" target="_blank" rel="noopener noreferrer" className="flex items-center group" aria-label="Chat on WhatsApp">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors">
-                    <MessageCircle className="w-5 h-5 text-white" />
+                    <MessageCircle className="w-5 h-5 text-white" aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Chat with us</p>
@@ -51,9 +51,9 @@ export default function Booking() {
                   </div>
                 </a>
                 
-                <a href="tel:9974418119" className="flex items-center group">
+                <a href="tel:9974418119" className="flex items-center group" aria-label="Call Riddhi">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors">
-                    <Phone className="w-5 h-5 text-white" />
+                    <Phone className="w-5 h-5 text-white" aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Call us</p>
@@ -61,9 +61,9 @@ export default function Booking() {
                   </div>
                 </a>
                 
-                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="flex items-center group">
+                <a href="https://instagram.com/MehendiByRiddhi" target="_blank" rel="noopener noreferrer" className="flex items-center group" aria-label="Follow on Instagram">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors">
-                    <InstagramIcon className="w-5 h-5 text-white" />
+                    <InstagramIcon className="w-5 h-5 text-white" aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Follow our work</p>
@@ -73,22 +73,22 @@ export default function Booking() {
 
                 <div className="flex items-start group">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors shrink-0">
-                    <MapPin className="w-5 h-5 text-white" />
+                    <MapPin className="w-5 h-5 text-white" aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Visit us</p>
                     <p className="font-medium text-lg mb-1">Riddhi Prajapati</p>
-                    <p className="text-sm text-gray-300 leading-relaxed max-w-sm">
+                    <address className="text-sm text-gray-300 not-italic leading-relaxed max-w-sm">
                       804 Sun Aspire, Nr. Nilkanth villa bunglow, opp samprat residency, dps road bopal - shilaj, Ahmedabad - 380058
-                    </p>
+                    </address>
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           </div>
 
           <div className="lg:w-1/2 w-full">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -108,6 +108,7 @@ export default function Booking() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C9A646] focus:border-transparent outline-none transition-all text-gray-800"
                     placeholder="Enter your full name"
+                    autoComplete="name"
                   />
                 </div>
                 
@@ -164,18 +165,19 @@ export default function Booking() {
                 <button 
                   type="submit"
                   className="w-full bg-[#1F3D2B] hover:bg-[#2A523A] text-white font-medium py-4 rounded-lg mt-4 transition-colors flex items-center justify-center space-x-2"
+                  aria-label="Send booking inquiry via WhatsApp"
                 >
                   <span>Book via WhatsApp</span>
-                  <MessageCircle className="w-5 h-5" />
+                  <MessageCircle className="w-5 h-5" aria-hidden="true" />
                 </button>
                 <p className="text-xs text-center text-gray-500 mt-3">We will get back to you within 24 hours.</p>
               </form>
-            </motion.div>
+            </m.div>
           </div>
         </div>
 
         {/* Google Maps Location */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -190,10 +192,11 @@ export default function Booking() {
             allowFullScreen="" 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-            title="MehendiByRiddhi Location"
+            title="MehendiByRiddhi Location Map"
           ></iframe>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );
 }
+
