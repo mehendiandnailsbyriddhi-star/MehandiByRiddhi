@@ -185,16 +185,17 @@ export default function Booking() {
           className="mt-20 w-full h-96 rounded-2xl overflow-hidden shadow-2xl border border-white/10"
         >
           <iframe 
-            src="https://maps.google.com/maps?q=804%20Sun%20Aspire,%20Nr.%20Nilkanth%20villa%20bunglow,%20opp%20samprat%20residency,%20dps%20road%20bopal%20-%20shilaj,%20Ahmedabad,%20380058&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+            src="https://maps.google.com/maps?q=Sun%20Aspire,%20Ahmedabad&t=&z=16&ie=UTF8&iwloc=&output=embed" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
             allowFullScreen="" 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-            title="MehendiByRiddhi Location Map"
+            title="Sun Aspire Location Map"
           ></iframe>
         </m.div>
+
       </div>
     </section>
   );
