@@ -15,7 +15,7 @@ export default function Hero() {
       </a>
 
       {/* Optimized LCP Background Image */}
-      <m.div 
+      <m.div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/hero_bg.png')" }}
         initial={{ scale: 1.05 }}
@@ -23,31 +23,31 @@ export default function Hero() {
         transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
       >
         {/* Invisible image for LCP prioritization and SEO alt text */}
-        <img 
-          src="/hero_bg.png" 
-          alt="Premium Mehendi and Nail Art background" 
-          className="sr-only" 
+        <img
+          src="/hero_bg.png"
+          alt="Premium Mehendi and Nail Art background"
+          className="sr-only"
           loading="eager"
           fetchpriority="high"
         />
       </m.div>
-      
+
       {/* Multi-layered Overlay for depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#1F3D2B]/80 via-[#1F3D2B]/40 to-[#1F3D2B]/90"></div>
       <div className="absolute inset-0 bg-black/20"></div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center items-center mt-10">
-        
+
         {/* Glassmorphism Container */}
-        <m.div 
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-5xl w-full backdrop-blur-md bg-[#1F3D2B]/30 border border-white/10 rounded-[2.5rem] p-8 md:p-14 text-center shadow-2xl relative"
         >
           {/* Top Floating Badge */}
-          <m.div 
+          <m.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
@@ -58,7 +58,7 @@ export default function Hero() {
           </m.div>
 
           {/* Subheading */}
-          <m.span 
+          <m.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -66,9 +66,9 @@ export default function Hero() {
           >
             Bridal Mehendi | Nail Extensions | Custom Art
           </m.span>
-          
+
           {/* Main Heading (H1 for SEO) */}
-          <m.h1 
+          <m.h1
             initial="hidden"
             animate="visible"
             variants={{
@@ -81,8 +81,8 @@ export default function Hero() {
             className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight drop-shadow-lg"
           >
             {"Beautiful Mehendi & Nail Art for ".split(" ").map((word, i) => (
-              <m.span 
-                key={`word-1-${i}`} 
+              <m.span
+                key={`word-1-${i}`}
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
                 className="inline-block mr-[0.25em]"
               >
@@ -91,8 +91,8 @@ export default function Hero() {
             ))}
             <br className="hidden md:block" aria-hidden="true" />
             {"Your Special Day".split(" ").map((word, i) => (
-              <m.span 
-                key={`word-2-${i}`} 
+              <m.span
+                key={`word-2-${i}`}
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
                 className="inline-block mr-[0.25em]"
               >
@@ -100,9 +100,9 @@ export default function Hero() {
               </m.span>
             ))}
           </m.h1>
-          
+
           {/* Description */}
-          <m.p 
+          <m.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -110,7 +110,7 @@ export default function Hero() {
           >
             Get the best henna designs and perfect nail art made just for you in Bopal, Ahmedabad. We mix old traditions with new styles.
           </m.p>
-          
+
           {/* Action Area */}
           <m.div
             initial={{ opacity: 0, y: 20 }}
@@ -118,7 +118,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-8"
           >
-            <button 
+            <button
               onClick={handleWhatsAppClick}
               aria-label="Book Now on WhatsApp"
               className="group relative bg-[#C9A646] text-white px-8 py-4 rounded-full text-lg font-medium overflow-hidden shadow-[0_0_20px_rgba(201,166,70,0.4)] hover:shadow-[0_0_30px_rgba(201,166,70,0.6)] transition-all w-full sm:w-auto"
@@ -156,7 +156,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <m.div 
+      <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}

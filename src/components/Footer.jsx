@@ -42,6 +42,19 @@ export default function Footer() {
             </div>
           </div>
 
+          <div className="flex flex-col items-center md:items-start">
+            <h4 className="text-lg font-heading font-medium mb-4 text-[#C9A646]">
+              Service Areas
+            </h4>
+            <ul className="space-y-2 text-center md:text-left text-sm text-gray-400">
+              <li>Mehendi Artist in Bopal</li>
+              <li>Nail Art in South Bopal</li>
+              <li>Bridal Mehendi in Shilaj</li>
+              <li>Mehandi Artist in Ambli</li>
+              <li>Nail Extensions in Ghuma</li>
+            </ul>
+          </div>
+
           <div className="flex flex-col items-center md:items-end">
             <h4 className="text-lg font-heading font-medium mb-4 text-[#C9A646]">
               Quick Links

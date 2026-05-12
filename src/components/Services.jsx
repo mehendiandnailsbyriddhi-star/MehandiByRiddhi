@@ -110,8 +110,13 @@ export default function Services() {
           ))}
         </div>
         
-        <footer className="text-center mt-12 text-sm text-gray-500 bg-gray-50 py-4 px-6 rounded-lg mx-auto w-full max-w-6xl">
-          <p>* Final pricing depends on design complexity, length of the design, and location. Travel charges may apply for out-of-station bookings.</p>
+        <footer className="mt-16 text-center">
+          <p className="text-gray-500 text-sm max-w-3xl mx-auto leading-relaxed italic">
+            * Final pricing depends on design complexity, length of the design, and location. Travel charges may apply for out-of-station bookings. 
+            <span className="block mt-4 not-italic text-gray-400">
+              Providing professional Bridal Mehendi and Nail Extensions across Bopal, South Bopal, Shilaj, Ghuma, and Ambli. We are committed to using 100% natural henna for a safe and beautiful experience.
+            </span>
+          </p>
         </footer>
       </div>
     </section>

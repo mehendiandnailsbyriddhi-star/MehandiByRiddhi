@@ -25,7 +25,7 @@ export default function Booking() {
     <section id="booking" className="py-24 bg-[#1F3D2B] text-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-          
+
           <div className="lg:w-1/2">
             <m.div
               initial={{ opacity: 0, x: -30 }}
@@ -36,7 +36,7 @@ export default function Booking() {
               <span className="text-[#C9A646] font-medium tracking-wider uppercase text-sm">Let's Connect</span>
               <h2 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6 text-white">Book Your Appointment</h2>
               <p className="text-gray-300 mb-8 text-lg font-light leading-relaxed">
-                Whether it's your big day or a simple party, book the top Mehendi and nail artist in Bopal today. 
+                Whether it's your big day or a simple party, book the top Mehendi and nail artist in Bopal today.
                 <span className="block mt-2 font-medium text-[#C9A646]">Spots fill up fast – Book early to secure your date!</span>
               </p>
 
@@ -50,7 +50,7 @@ export default function Booking() {
                     <p className="font-medium text-lg">+91 99744 18119</p>
                   </div>
                 </a>
-                
+
                 <a href="tel:9974418119" className="flex items-center group" aria-label="Call Riddhi">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors">
                     <Phone className="w-5 h-5 text-white" aria-hidden="true" />
@@ -60,7 +60,7 @@ export default function Booking() {
                     <p className="font-medium text-lg">+91 99744 18119</p>
                   </div>
                 </a>
-                
+
                 <a href="https://instagram.com/MehendiByRiddhi" target="_blank" rel="noopener noreferrer" className="flex items-center group" aria-label="Follow on Instagram">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors">
                     <InstagramIcon className="w-5 h-5 text-white" aria-hidden="true" />
@@ -71,11 +71,11 @@ export default function Booking() {
                   </div>
                 </a>
 
-                <a 
-                  href="https://maps.app.goo.gl/pqXMPAH5LPEhTDCRA" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-start group" 
+                <a
+                  href="https://maps.app.goo.gl/pqXMPAH5LPEhTDCRA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start group"
                   aria-label="View location on Google Maps"
                 >
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors shrink-0">
@@ -105,10 +105,10 @@ export default function Booking() {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
                     required
                     value={formData.name}
                     onChange={handleChange}
@@ -117,11 +117,11 @@ export default function Booking() {
                     autoComplete="name"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="event" className="block text-sm font-medium text-gray-700 mb-1">Service Required</label>
-                  <select 
-                    id="event" 
+                  <select
+                    id="event"
                     name="event"
                     required
                     value={formData.event}
@@ -138,13 +138,13 @@ export default function Booking() {
                     <option value="Other">Other</option>
                   </select>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-1">Event Date</label>
-                    <input 
-                      type="date" 
-                      id="date" 
+                    <input
+                      type="date"
+                      id="date"
                       name="date"
                       required
                       min={new Date().toISOString().split('T')[0]}
@@ -155,9 +155,9 @@ export default function Booking() {
                   </div>
                   <div>
                     <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-1">Location</label>
-                    <input 
-                      type="text" 
-                      id="location" 
+                    <input
+                      type="text"
+                      id="location"
                       name="location"
                       required
                       value={formData.location}
@@ -167,8 +167,8 @@ export default function Booking() {
                     />
                   </div>
                 </div>
-                
-                <button 
+
+                <button
                   type="submit"
                   className="w-full bg-[#1F3D2B] hover:bg-[#2A523A] text-white font-medium py-4 rounded-lg mt-4 transition-colors flex items-center justify-center space-x-2"
                   aria-label="Send booking inquiry via WhatsApp"
@@ -190,13 +190,13 @@ export default function Booking() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-20 w-full h-96 rounded-2xl overflow-hidden shadow-2xl border border-white/10"
         >
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.436752003848!2d72.4667071153544!3d23.0444415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b83c2f58607%3A0x7eda03892f8af26!2sSun%20Aspire!5e0!3m2!1sen!2sin!4v1715484390000!5m2!1sen!2sin" 
-            width="100%" 
-            height="100%" 
-            style={{ border: 0 }} 
-            allowFullScreen="" 
-            loading="lazy" 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.436752003848!2d72.4667071153544!3d23.0444415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b83c2f58607%3A0x7eda03892f8af26!2sSun%20Aspire!5e0!3m2!1sen!2sin!4v1715484390000!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Sun Aspire Location Map"
           ></iframe>
