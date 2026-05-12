@@ -23,9 +23,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#FFF8E7]/80 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#FFF8E7]/80 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
+        }`}
       aria-label="Main Navigation"
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -39,9 +38,8 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-medium hover:text-[#C9A646] transition-colors ${
-                isScrolled ? 'text-[#1F3D2B]' : 'text-white'
-              }`}
+              className={`text-sm font-medium hover:text-[#C9A646] transition-colors ${isScrolled ? 'text-[#1F3D2B]' : 'text-white'
+                }`}
             >
               {link.name}
             </a>

@@ -77,8 +77,8 @@ export default function Portfolio() {
                 aria-selected={activeCategory === category}
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === category
-                    ? "bg-[#1F3D2B] text-white"
-                    : "bg-white text-[#1F3D2B] border border-[#1F3D2B]/10 hover:border-[#C9A646]"
+                  ? "bg-[#1F3D2B] text-white"
+                  : "bg-white text-[#1F3D2B] border border-[#1F3D2B]/10 hover:border-[#C9A646]"
                   }`}
               >
                 {category}
