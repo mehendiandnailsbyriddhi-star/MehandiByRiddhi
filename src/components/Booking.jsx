@@ -71,18 +71,24 @@ export default function Booking() {
                   </div>
                 </a>
 
-                <div className="flex items-start group">
+                <a 
+                  href="https://maps.app.goo.gl/pqXMPAH5LPEhTDCRA" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-start group" 
+                  aria-label="View location on Google Maps"
+                >
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#C9A646] transition-colors shrink-0">
                     <MapPin className="w-5 h-5 text-white" aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Visit us</p>
-                    <p className="font-medium text-lg mb-1">Riddhi Prajapati</p>
-                    <address className="text-sm text-gray-300 not-italic leading-relaxed max-w-sm">
+                    <p className="font-medium text-lg mb-1 group-hover:text-[#C9A646] transition-colors">Riddhi Prajapati</p>
+                    <address className="text-sm text-gray-300 not-italic leading-relaxed max-w-sm group-hover:text-white transition-colors">
                       804 Sun Aspire, Nr. Nilkanth villa bunglow, opp samprat residency, dps road bopal - shilaj, Ahmedabad - 380058
                     </address>
                   </div>
-                </div>
+                </a>
               </div>
             </m.div>
           </div>
@@ -185,7 +191,7 @@ export default function Booking() {
           className="mt-20 w-full h-96 rounded-2xl overflow-hidden shadow-2xl border border-white/10"
         >
           <iframe 
-            src="https://maps.google.com/maps?q=23.0444464,72.4663209&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.436752003848!2d72.4667071153544!3d23.0444415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b83c2f58607%3A0x7eda03892f8af26!2sSun%20Aspire!5e0!3m2!1sen!2sin!4v1715484390000!5m2!1sen!2sin" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 

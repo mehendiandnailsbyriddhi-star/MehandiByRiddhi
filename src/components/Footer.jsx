@@ -18,15 +18,21 @@ export default function Footer() {
               Your trusted Mehendi and Nail Artist in Bopal, Ahmedabad. We make your special moments beautiful with safe, natural henna and premium nail art.
             </p>
             <div className="flex flex-col items-center md:items-start text-sm text-gray-400 space-y-3">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-[#C9A646] shrink-0" aria-hidden="true" />
+              <a 
+                href="https://maps.app.goo.gl/pqXMPAH5LPEhTDCRA" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-start space-x-3 group" 
+                aria-label="View location on Google Maps"
+              >
+                <MapPin className="w-5 h-5 text-[#C9A646] shrink-0 group-hover:scale-110 transition-transform" aria-hidden="true" />
                 <div className="max-w-[250px] text-left">
-                  <span className="text-white block font-medium mb-1">Riddhi Prajapati</span>
-                  <address className="not-italic">
+                  <span className="text-white block font-medium mb-1 group-hover:text-[#C9A646] transition-colors">Riddhi Prajapati</span>
+                  <address className="not-italic text-gray-400 group-hover:text-gray-200 transition-colors">
                     804 Sun Aspire, Nr. Nilkanth villa bunglow, opp samprat residency, dps road bopal - shilaj, Ahmedabad - 380058
                   </address>
                 </div>
-              </div>
+              </a>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[#C9A646] shrink-0" aria-hidden="true" />
                 <a href="tel:9974418119" className="hover:text-white transition-colors" aria-label="Call Riddhi at +91 99744 18119">
